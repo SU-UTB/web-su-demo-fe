@@ -17,10 +17,7 @@ jobs:
         node-version: '14'
       
     - name: Build Project
-      run: |
-        npm ci
-        npm install
-        npm run build
+      run: npm ci && npm run build
     
     - name: List output files
       run: find dist/ -print
