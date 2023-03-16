@@ -23,7 +23,7 @@ jobs:
       run: find dist/ -print
       
     - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP }}
         username: ${{ secrets.FTP_USERNAME }}
