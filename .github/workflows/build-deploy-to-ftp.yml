@@ -1,7 +1,7 @@
 on:
   push:
-    main:
-      - master
+    branches:
+      - main
 name: Deploy website on main push
 jobs:
   web-deploy:
