@@ -2,6 +2,7 @@ on:
   push:
     branches:
       - main
+      - devel
 name: Deploy website on main push
 jobs:
   web-deploy:
@@ -30,4 +31,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ${{ env.FTP_PROTOCOL }}
         local-dir: dist/
-        server-dir: ${{ env.SERVER_DIR }}
+        server-dir: dist/
